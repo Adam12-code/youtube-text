@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
- export async function  getScreenHots (url){
+ module.export = async function  getScreenHots (url){
         try{
             const browser = await puppeteer.launch({headless: false});
             const page = await browser.newPage();

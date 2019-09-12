@@ -1,6 +1,9 @@
 const express = require("express");
-import { getText } from "./Text-image";
-import {getScreenHots} from "./Pscreenshots";
+//import { getText } from "./Text-image";
+//import {getScreenHots} from "./Pscreenshots";
+
+const getText=require("./Text-image");
+const getScreenHots= require("./Pscreenshots");
 
 const app = express();
 

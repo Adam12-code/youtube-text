@@ -1,9 +1,11 @@
-import { getScreenHots } from "./Pscreenshots";
+//import { getScreenHots } from "./Pscreenshots";
+const getScreenHots = require("./Pscreenshots")
 //import { url } from "inspector";
 
-import tesseract from 'tesseract.js'
+//import {tesseract} from 'tesseract.js'
+const tesseract =require("tesseract.js")
 
-export async function getText(url){
+module.export = async function getText(url){
 const image =await getScreenHots(url);
 
 const {TesseractWorker} = tesseract;
